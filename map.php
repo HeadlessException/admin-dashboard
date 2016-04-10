@@ -74,7 +74,7 @@
       }
       var myCity = new google.maps.Circle({
         center:location,
-        radius:newDisaster.Radius,
+        radius:newDisaster.Radius*1000,
         strokeColor:strokeColor,
         strokeOpacity:0.8,
         strokeWeight:2,

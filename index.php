@@ -7,8 +7,15 @@
   </title>
 <script src="firebase.js"></script>
 <script src="jquery.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="body container">
+
+  <p id = "heading">Disaster Dashboard</p>
+
   <form>
     <div class="form-elem">
       <label>Latitude</label>
@@ -16,27 +23,32 @@
     </div>
     <div class="form-elem">
       <label>Longitude</label>
-      <input type="number" step="0.00001" id="Longitude" placeholder="Longitude" name="Longitude" required>
+      <input type="number" step="0.00001" id="Longitude" placeholder="Longitude" name="Longitude" required >
     </div>
     <div class="form-elem">
-      <label>Disaster</label>
-      <select id="Disaster" placeholder="Disaster" name="Disaster" required>
-        <option value="Earthquake">Earthquake</option>
-        <option value="Flood">Flood</option>
-        <option value="Landslide">Landslide</option>
-        <option value="Avalanche">Avalanche</option>
-        <option value="Cyclone">Cyclone</option>
-        <option value="Tsunami">Tsunami</option>
-        <option value="Famine">Famine</option>
-        <option value="Plague">Plague</option>
-        <option value="Heat Wave">Heat Wave</option>
-        <option value="Drought">Drought</option>
-        <option value="Cloudburst">Cloudburst</option>
-      </select>
+
+      <label>Disaster</label><br>
+        <div class = "dropdown">
+          <select id="Disaster" placeholder="Disaster" name="Disaster" required class ="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >
+            <span class="caret"></span>
+            <option value="Earthquake">Earthquake</option>
+            <option value="Flood">Flood</option>
+            <option value="Landslide">Landslide</option>
+            <option value="Avalanche">Avalanche</option>
+            <option value="Cyclone">Cyclone</option>
+            <option value="Tsunami">Tsunami</option>
+            <option value="Famine">Famine</option>
+            <option value="Plague">Plague</option>
+            <option value="Heat Wave">Heat Wave</option>
+            <option value="Drought">Drought</option>
+            <option value="Cloudburst">Cloudburst</option>
+
+          </select>
+      </div>
     </div>
     <div class='form-elem'>
       <label>Radius</label>
-      <input type='number' step='0.00001' id='Radius' placeholder='Radius' name='Radius' required>
+      <input type='number' step='0.00001' id='Radius' placeholder='Radius' name='Radius' required >
     </div>
     <div class='form-elem' id = "EarthquakeMagnitude">
       <label>Magnitude</label>
@@ -54,8 +66,11 @@
       }
     })
     </script>
-    <button type="submit" class="btn btn-default" name="submit">Submit</button>
+    <br><br>
+    <button type="submit" class="btn btn-default btn-lg" name="submit">Submit</button><br><br>
   </form>
-  <a href="map.php"><button class = "btn btn-default">View Map</button></a>
+  <div class = "map">
+  <a href="map.php"><button class = "btn btn-default btn-lg" id="btn" >View Map</button></a>
+</div>
 <script src="db.js"></script>
 </body>

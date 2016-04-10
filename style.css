@@ -1,0 +1,47 @@
+body{
+	background-color: #90CAF9;
+	color: #36454f;
+}
+form{
+	margin: auto;
+	width: 60%;
+	color: black;
+}
+.a{
+	margin: auto;
+	width: 60%;
+}
+body p{
+	color: #36453e;
+	font-size: 70px;
+	font-weight: 900;
+	margin: auto;
+	width: 80%;
+}
+label{
+	font-size:25px; padding-top:40px;
+}
+button{
+	width:10em;height:2.5em;
+
+}
+a{
+	margin: auto;
+	margin-left: 20%;
+}
+input{
+	padding-left: 20%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	margin-right: 62%;
+	background-size: 33px;
+	border-radius: 10px;
+}
+.map{
+	margin-top: 50px;
+	float: right;
+	width: 40vw;
+}
+#heading{
+	font-family: sans-serif;
+}

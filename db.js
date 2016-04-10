@@ -11,6 +11,7 @@ function funct1()
 
   var radius = $("#Radius").val();
 
+
   if(disaster == 'Earthquake'){
     disaster = 'Magnitude ' + $('#Magnitude').val() + ' ' + disaster;
   }
