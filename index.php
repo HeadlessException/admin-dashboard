@@ -32,7 +32,7 @@
         <option value="Heat Wave">Heat Wave</option>
         <option value="Drought">Drought</option>
         <option value="Cloudburst">Cloudburst</option>
-</select>
+      </select>
     </div>
     <div class='form-elem'>
       <label>Radius</label>
@@ -40,7 +40,7 @@
     </div>
     <div class='form-elem' id = "EarthquakeMagnitude">
       <label>Magnitude</label>
-      <input type='number' step='0.001' id='Magnitude' placeholder='Magnitude' name='Magnitude' required novalidate>
+      <input type='number' step='0.001' id='Magnitude' placeholder='Magnitude' name='Magnitude' required >
     </div>
     <script>
     $("#Disaster").change(function(){

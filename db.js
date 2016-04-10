@@ -9,6 +9,8 @@ function funct1()
 
   var disaster = $('#Disaster').val();
 
+  var radius = $("#Radius").val();
+
   if(disaster == 'Earthquake'){
     disaster = 'Magnitude ' + $('#Magnitude').val() + ' ' + disaster;
   }
@@ -22,6 +24,7 @@ function funct1()
       Latitude: lat,
       Longitude: long,
       Disaster: disaster,
+      Radius: radius,
       Time: t_millis
   });
 
