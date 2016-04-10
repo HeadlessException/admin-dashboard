@@ -15,7 +15,7 @@
 </head>
 <body class="body container">
 
-  <p id = "heading">Disaster Dashboard</p>
+  <p id = "heading">Disastro Dashboard</p>
   <div class = "one">
   <form>
     <div class="form-elem">
