@@ -72,6 +72,10 @@
         strokeColors = "#BDBDBD";
         fillColors = "#BDBDBD";
       }
+      var marker=new google.maps.Marker({
+        position:location
+      });
+      marker.setMap(map);
       var myCity = new google.maps.Circle({
         center:location,
         radius:newDisaster.Radius*1000,
@@ -82,6 +86,10 @@
         fillOpacity:0.4
       });
       myCity.setMap(map);
+      var infowindow = new google.maps.InfoWindow({
+        content: newDisaster.Disaster
+      });
+      infowindow.open(map,marker);
     });
     google.maps.event.addDomListener(window, 'load', initialize);
   });
