@@ -27,58 +27,58 @@
       newDisaster = snapshot.val();
       console.log(newDisaster);
       var location = new google.maps.LatLng(newDisaster.Latitude, newDisaster.Longitude);
-      var strokeColor, fillColor;
+      var strokeColors, fillColors;
       if(newDisaster.Disaster == "Earthquake"){
-        strokeColor:"#F44336";
-        fillColor:"#F44336";
+        strokeColors = "#F44336";
+        fillColors = "#F44336";
       }
       else if(newDisaster.Disaster == "Flood"){
-        strokeColor:"#E91E63";
-        fillColor:"#E91E63";
+        strokeColors = "#E91E63";
+        fillColors = "#E91E63";
       }
       else if(newDisaster.Disaster == "Avalanche"){
-        strokeColor:"#9C27B0";
-        fillColor:"#9C27B0";
+        strokeColors = "#9C27B0";
+        fillColors = "#9C27B0";
       }
       else if(newDisaster.Disaster == "Drought"){
-        strokeColor:"#2196F3";
-        fillColor:"#2196F3";
+        strokeColors = "#2196F3";
+        fillColors = "#2196F3";
       }
       else if(newDisaster.Disaster == "Famine"){
-        strokeColor:"#009688";
-        fillColor:"#009688";
+        strokeColors = "#009688";
+        fillColors = "#009688";
       }
       else if(newDisaster.Disaster == "Landslide"){
-        strokeColor:"#8BC34A";
-        fillColor:"#8BC34A";
+        strokeColors = "#8BC34A";
+        fillColors = "#8BC34A";
       }
       else if(newDisaster.Disaster == "Heat Wave"){
-        strokeColor:"#CDDC39";
-        fillColor:"#CDDC39";
+        strokeColors = "#CDDC39";
+        fillColors = "#CDDC39";
       }
       else if(newDisaster.Disaster == "Cyclone"){
-        strokeColor:"#69F0AE";
-        fillColor:"#69F0AE";
+        strokeColors = "#69F0AE";
+        fillColors = "#69F0AE";
       }
       else if(newDisaster.Disaster == "Plague"){
-        strokeColor:"#FFC107";
-        fillColor:"#FFC107";
+        strokeColors:"#FFC107";
+        fillColors:"#FFC107";
       }
       else if(newDisaster.Disaster == "Cloudburst"){
-        strokeColor:"#795548";
-        fillColor:"#795548";
+        strokeColors = "#795548";
+        fillColors = "#795548";
       }
       else if (newDisaster.Disaster == "Tsunami"){
-        strokeColor:"#BDBDBD";
-        fillColor:"#BDBDBD";
+        strokeColors = "#BDBDBD";
+        fillColors = "#BDBDBD";
       }
       var myCity = new google.maps.Circle({
         center:location,
         radius:newDisaster.Radius*1000,
-        strokeColor:strokeColor,
+        strokeColor:strokeColors,
         strokeOpacity:0.8,
         strokeWeight:2,
-        fillColor:fillColor,
+        fillColor:fillColors,
         fillOpacity:0.4
       });
       myCity.setMap(map);

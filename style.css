@@ -1,6 +1,6 @@
 body{
-	background-color: #90CAF9;
-	color: #36454f;
+	background-color: #212121;
+	color: #ffffff;
 }
 form{
 	margin: auto;
@@ -19,7 +19,7 @@ body p{
 	width: 80%;
 }
 label{
-	font-size:25px; padding-top:40px;
+	font-size:25px; padding-top:20px; color:#fff;
 }
 button{
 	width:10em;height:2.5em;
@@ -31,17 +31,30 @@ a{
 }
 input{
 	padding-left: 20%;
-	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 	margin-right: 62%;
 	background-size: 33px;
 	border-radius: 10px;
 }
-.map{
-	margin-top: 50px;
-	float: right;
-	width: 40vw;
+.one{
+	float: left;
+	width: 43vw;
+	display: inline-block;
+	margin-left: 0px;
+}
+iframe{
+	width: 45vw;
+	height: 60vh;
+	margin-top: 40px;
 }
 #heading{
-	font-family: sans-serif;
+	font-family: 'Roboto Condensed', sans-serif;
+	display: inline-block;
+	margin-left: 250px;
+	color: #B2DFDB;
+}
+#btn{
+	margin-top: 40px;
+	margin-left: 85px;
 }
