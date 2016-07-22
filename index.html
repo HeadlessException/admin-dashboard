@@ -5,16 +5,14 @@
   <title>
     Disastro
   </title>
-<script src="firebase.js"></script>
-<script src="jquery.min.js"></script>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="js/firebase.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body class="body container">
-
   <p id = "heading">Disastro Dashboard</p>
   <div class = "one">
   <form>
@@ -27,7 +25,6 @@
       <input type="number" step="0.00001" id="Longitude" placeholder="Longitude" name="Longitude" required >
     </div>
     <div class="form-elem">
-
       <label>Disaster</label><br>
         <div class = "dropdown">
           <select id="Disaster" placeholder="Disaster" name="Disaster" required class ="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" >
@@ -77,5 +74,5 @@
     </iframe>
     <a href="map.html"><button class = "btn btn-default btn-lg" id="btn" >View Map</button></a>
 </div>
-<script src="db.js"></script>
+<script src="js/db.js"></script>
 </body>
