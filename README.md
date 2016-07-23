@@ -9,6 +9,9 @@ Admin Panel for the app Disastro to disperse information about disasters.
  - Requires the Admin to specify radius of the area affected and uses different colors to identify various disasters on the    Map.
  
  - Provides the Admin with the option of viewing the map with the updated changes.
+ 
+
+![Screenshot for disastro-dashboard](/screenshot.png?aw=true "Screenshot for disastro-dashboard")
 
 ##APIs (implementation using JS) used:
 
