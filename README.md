@@ -6,7 +6,7 @@ Admin Panel for the app Disastro to disperse information about disasters.
 
  - Provides a drop-down menu for selection of disaster from the provided list of natural calamities
  
- - Requires the Admin to specify radius of the area affected and uses different colors to identify various disasters on the    Map.
+ - Requires the Admin to specify radius of the area affected and uses different colors to identify various disasters on the Map.
  
  - Provides the Admin with the option of viewing the map with the updated changes.
  

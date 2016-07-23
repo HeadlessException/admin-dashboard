@@ -17,7 +17,6 @@ $(document).ready(function(){
     var newDisaster;
     ref.on("child_added",function(snapshot){
       newDisaster = snapshot.val();
-      console.log(newDisaster);
       var location = new google.maps.LatLng(newDisaster.Latitude, newDisaster.Longitude);
       var strokeColors, fillColors;
       if(newDisaster.Disaster == "Earthquake"){
