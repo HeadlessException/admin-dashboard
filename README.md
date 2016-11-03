@@ -23,8 +23,8 @@ Basic structure and Layout: HTML5 and CSS3
 
 ##Getting Started :
 ```
-git clone https://github.com/HeadlessException/HeadlessException.github.io/
-cd HeadlessException.github.io
+git clone https://github.com/HeadlessException/admin-dashboard/
+cd admin-dashboard
 ```
 Open index.html and view it in the browser of your choice.
 
