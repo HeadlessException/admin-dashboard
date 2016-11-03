@@ -1,4 +1,4 @@
-# HeadlessException.github.io
+# Admin-dashboard
 
 Admin Panel for the app Disastro to disperse information about disasters.
 
